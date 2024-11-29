@@ -1,0 +1,123 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#valikko {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+#banner {
+  width: 300px;
+  height: 100px;
+}
+li a:hover {
+  text-decoration: underline;
+}
+#hero {
+  background-color: black;
+  padding-bottom: 100px;
+}
+#annes {
+  color: white;
+  text-align: center;
+  margin: 0px;
+}
+#tutustu {
+  background-color: #e2ffbb;
+  color: black;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  padding: 10px 50px;
+  border-radius: 20px;
+}
+.annes-kuvat {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.annes-kuvat img {
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+h2 {
+  text-align: center;
+}
+#esittelyteksti {
+  color: white;
+  text-align: center;
+}
+footer {
+  background-color: #e2ffbb;
+  padding: 50px 10px;
+}
+.bubbles-container {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  margin-top: 20px;
+}
+
+.bubble {
+  background-color: #f0f8ff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bubble .asiakas {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bubble .description {
+  font-size: 14px;
+  color: #555;
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  max-width: 450;
+
+  margin-right: 30px;
+  background-color: #f0f8ff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 600px;
+  height: 435px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
