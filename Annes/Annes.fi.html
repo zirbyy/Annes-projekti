@@ -5,24 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etusivu</title>
     <link rel="stylesheet" href="style.css" />
-    <script type="module" src="main"></script>
+    <link rel="stylesheet" href="btn.css" />
   </head>
   <body>
     <nav>
       <ul id="valikko">
         <li>
-          <a href="kartta.html">Kartta</a>
+          <a href="#" id="kartta-link">Kartta</a>
         </li>
         <li>
-          <a href="#">Yhteistiedot</a>
+          <a href="#" id="yhteistiedot-link">Yhteistiedot</a>
         </li>
-        <img src="assets/HeroBanner/AnneSetalaLogo.jpg" id="banner" /><img />
+        <li>
+          <a href="intranet.html">Intranet</a>
+        </li>
+        <a href="Annes.fi.html"
+          ><img src="assets/HeroBanner/AnneSetalaLogo.jpg" id="banner" /><img
+        /></a>
       </ul>
     </nav>
     <div id="hero">
       <h1 id="annes">Annes</h1>
       <p id="esittelyteksti">Esittelyteksti</p>
-      <button id="tutustu">Tutustu lisää</button>
+      <div>
+        <button class="btn">
+          <i class="animatio"></i>Tutustu lisää<i class="animation"></i>
+        </button>
+      </div>
     </div>
     <h2>Hyvinvointia</h2>
     <p>
@@ -68,25 +77,67 @@
         <p class="description">Proin suscipit enim ut mattis maximus.</p>
       </div>
     </div>
-    <h2>Matkakohteemme:</h2>
-    <div class="maps">
-      <div class="iframe-container">
-        <div class="bubble2">
-          <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.4866989219468!2d24.93291057705013!3d60.201530175048404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920991ece823df%3A0xd4b4f30731ef9db7!2sBusiness%20College%20Helsinki!5e0!3m2!1sfi!2sfi!4v1732793964877!5m2!1sfi!2sfi"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
+    <h2 id="kartta-target">Matkakohteemme:</h2>
+    <div id="iframe-container" class="iframe-container">
+      <p class="description">
+        Liikuntamatkojemme kohteet:<br />
+        Sijainti 1<br />Sijainti 2
+      </p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.4866989219468!2d24.93291057705013!3d60.201530175048404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920991ece823df%3A0xd4b4f30731ef9db7!2sBusiness%20College%20Helsinki!5e0!3m2!1sfi!2sfi!4v1732793964877!5m2!1sfi!2sfi"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
-    <footer></footer>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Yhteystiedot</h3>
+          <p>Anne Setälä</p>
+          <p>Puh: 040 123 4567</p>
+          <p>Email: anne@annes.fi</p>
+        </div>
+        <div class="footer-section">
+          <h3>Seuraa meitä</h3>
+          <div class="social-links">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="assets/icons/facebook.png" alt="Facebook" />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="assets/icons/instagram.png" alt="Instagram" />
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="assets/icons/linkedin.png" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Osoite</h3>
+          <p>Esimerkkikatu 123</p>
+          <p>00100 Helsinki</p>
+          <p>Suomi</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Annes. Kaikki oikeudet pidätetään.</p>
+      </div>
+    </footer>
   </body>
+  <script src="main.js"></script>
 </html>

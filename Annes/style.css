@@ -93,14 +93,14 @@ footer {
   margin-bottom: 10px;
 }
 
-.bubble .description {
-  font-size: 14px;
+.description {
+  font-size: 25px;
   color: #555;
+  margin-right: 40px;
 }
 
 .iframe-container {
   display: flex;
-  justify-content: center;
   margin: 0 auto;
   max-width: 1200px;
   background-color: #f0f8ff;
@@ -108,7 +108,6 @@ footer {
   padding: 20px;
   width: 1000px;
   height: 435px;
-  text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -124,4 +123,73 @@ iframe {
   width: 200px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+footer {
+  background-color: #e2ffbb;
+  padding: 50px 20px 20px 20px;
+  margin-top: 50px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-section {
+  min-width: 250px;
+  text-align: center;
+}
+
+.footer-section h3 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+.footer-section p {
+  color: #666;
+  margin: 8px 0;
+  font-size: 0.9em;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: #666;
+  font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
