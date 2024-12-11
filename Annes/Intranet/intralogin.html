@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annes Intranet</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <nav>
+        <img src="/assets/HeroBanner/AnneSetalaLogo.jpg" id="banner" /><img />
+        <ul id="valikko">
+            <li>
+                <a href="/Annes.fi.html">Etusivu</a>
+            </li>
+            <li>
+              <a href="/Annes.fi.html" id="kartta-link">Kartta</a>
+            </li>
+            <li>
+              <a href="/Annes.fi.html" id="yhteistiedot-link">Yhteistiedot</a>
+            </li>
+            <li>
+              <a href="intranet/login.html">Intranet</a>
+            </li>
+        </ul>
+      </nav>
+      <div class="login-container">
+        <h2>Annes intranet</h2>
+        <input type="text" id="username" placeholder="Käyttäjätunnus" required autocomplete="off">
+        <input type="password" id="password" placeholder="Salasana" required autocomplete="off">
+        <button onclick="login()">Kirjaudu sisään</button>
+    </div>
+
+<script>
+    function login() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        if (username === 'admin' && password === 'taitaja2024') {
+            localStorage.setItem('loggedIn', 'true');
+            window.location.href = 'intranet.html';
+        } else {
+            alert('Virheellinen käyttäjätunnus tai salasana');
+        }
+    }
+</script>
+<script>
+    let lastScrollTop = 0;
+    const nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (scrollTop > lastScrollTop) {
+            // Scrolling down
+            nav.style.top = '-60px'; // Adjust this value based on nav height
+        } else {
+            // Scrolling up
+            nav.style.top = '0';
+        }
+        
+        lastScrollTop = scrollTop;
+    });
+</script>
+
+</body>
+</html>
