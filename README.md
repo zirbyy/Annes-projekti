@@ -1,8 +1,8 @@
-1. Projekti on verkkosivu kokonaisuus fyrioterapeutti Anne Setälälle. Verkkosivujen avulla pääsee tutustumaan fysioterapian toimintaan ja minkälaisia tapahtumia se järjestää.
-2. Verkkosivu kokonaisuuden voi ladata täältä GitHubista, jonka jälkeen suosittelemme seuraamaan kohta 4. ohjeita :)
-3. Sen jälkeen sen voi runnata klikkaamalla vain HTML-tiedostoa tai käyttämällä Visual Studio Coden Live Server pluginia.
-4. Projekti käyttää: HTML, CSS ja JavaScript koodia jotta sen kokonaisuus on täydellinen.
-5. Projekti on tarkoitettu toimimaan esimerkkinä ja sitä voi käyttää ei tuottoja käytettävään toimintaan.
-6. Projektin on luonut opiskelija ryhmä Business Collegesta johon kuuluu WEB23B ryhmän opiskelijoita aka Daren Haupt, Aapo Mustonen ja Veertti Peuranen.
-7. Tiedossamme ei pitäisi olla ongelmia.
-8. Boom shakalaka
+1. Projekti on verkkosivu kokonaisuus perustuen vuoden 2022 Taitaja kilpailun tehtävään, projektin aihe/kohde on Fysioterapeutti Annesin uudet sivut.
+2. Projekti käyttää: HTML, CSS ja JavaScript koodia jotta sen kokonaisuus päätyi täydelliseen.
+3. Projektin on luonut opiskelija ryhmä Business Collegesta johon kuuluu WEB23B ryhmän opiskelijoita aka Daren Haupt, Aapo Mustonen ja Veertti Peuranen. ->
+   
+Daren keskittyi rakentamaan etusivulle HTML ja CSS basen josta oli helppo lähteä rakentamaan sivua eteenpäin, tietysti hän oli myös mukana jatkossa kun päivitimme ulkoasua jne.
+Aapo toimi sivun toiminnallisuuden varmistuksessa ja sen kehittämisessä (Kaikkien ongelmien ratkomisessa jne jne.).
+Veertti keskittyi kokonaisuuteen kuuluvan intranetin rakentamisessa, toiminnalisuuden varmistuksessa, ongelmien ratkomisessa jne. 
+Kaikki kuuluivat jokaiseen sivun vaiheeseen vaikka välttämättä jokaisen kädenjälki ei ole jokaisessa kohdassa, mielipiteet oli aina projektin aikana jaettu ja sitä mukaan kehitetty lopputulokseen saakka.
