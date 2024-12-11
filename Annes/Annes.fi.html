@@ -5,88 +5,203 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etusivu</title>
     <link rel="stylesheet" href="style.css" />
-    <script type="module" src="main"></script>
+    <link rel="stylesheet" href="btn.css" />
   </head>
   <body>
-    <nav>
-      <ul id="valikko">
-        <li>
-          <a href="#">Kartta</a>
-        </li>
-        <li>
-          <a href="#">Yhteistiedot</a>
-        </li>
-        <img src="assets/HeroBanner/AnneSetalaLogo.jpg" id="banner" /><img />
-      </ul>
-    </nav>
-    <div id="hero">
-      <h1 id="annes">Annes</h1>
-      <p id="esittelyteksti">Esittelyteksti</p>
-      <button id="tutustu">Tutustu lisää</button>
+    <div id="valikko">
+      <a href="Annes.fi.html">
+        <img src="assets/HeroBanner/AnneSetalaLogo.jpg" id="banner" />
+      </a>
+      <button class="menu-toggle">☰</button>
+      <div class="nav-links">
+        <a href="Annes.fi.html">Etusivu</a>
+        <a href="#" id="kartta-link">Kartta</a>
+        <a href="#" id="yhteistiedot-link">Yhteistiedot</a>
+        <a href="intranet/intralogin.html">Intranet</a>
+      </div>
     </div>
-    <h2>Hyvinvointia</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
-    </p>
-    <div class="annes-kuvat">
-      <img
+    <div id="hero">
+      <div id="sisalto">
+        <h1 id="annes">Annes</h1>
+        <p id="esittelyteksti">Olen järjestänyt patikointi- ja hyvinvointimatkoja jo 10 vuoden ajan vuosittain eri Euroopan kohteisiin mm. Italiaan, Itävaltaan, Skotlantiin, Kroatiaan, Irlantiin ja Sloveniaan. 
+          Matkat ovat kokonaisvaltaista hyvinvointia tukevia. Upeat nähtävyydet koetaan patikoiden ja paikallinen gastronomia tulee myös tutuksi. 
+          Tutustu kohteisiin kartasta ja lue asiakkaitteni kokemuksia liikuntamatkoista!</p>
+        <button class="btn" href="#" id="palvelusta-link">
+        <i class="animatio"></i>Tutustu lisää<i class="animation"></i>
+        </button>
+      </div>
+    </div>
+
+
+    <div class="Palvelusta" id="palvelusta">
+      <div  class="annes-kuvat">
+        <img
         src="assets/Palvelusta/PalvelustaKuvia/AnneSetala_kuva1.jpeg"
         alt="Image 1"
       />
+      
+  
+      <img src="assets/Palvelusta/PalvelustaKuvia/AnneSetala_Kuva4.JPG" alt="">
+  
+  
       <img
-        src="assets/Palvelusta/PalvelustaKuvia/AnneSetala_kuva2.jpeg"
-        alt="Image 2"
-      />
-      <img
-        src="assets/Palvelusta/PalvelustaKuvia/AnneSetala_Kuva3.JPG"
-        alt="Image 3"
-      />
-    </div>
-    <h2>Asiakkaiden kokemuksia:</h2>
-    <div class="bubbles-container">
-      <div class="bubble">
-        <p class="asiakas">Asiakas 1</p>
-        <p class="description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      src="assets/Palvelusta/PalvelustaKuvia/AnneSetala_kuva2.jpeg"
+      alt="Image 2"
+    />
+      </div>
+       
+     
+        <div id="anne-info">
+        <h1>Anne Setälä</h1>
+          <h2>★Fysioterapeutin tutkinto 1986★</h2>
+        <h3>★Yrittäjänä vuodesta 1998★</h3>
+        <h4>★FISAF-Personal Trainer 2006★</h4>
+        <br>
+        
+        <p>
+          Olen järjestänyt liikunta ja hyvinvointimatkoja jo vuodesta 2012. Pitkäaikainen kumppanini on matkatoimisto Kontiki. 
+        Kon-Tiki Tours tarjoaa hyvinvointimatkoja yhteistyössä alan huippuammattilaisten kanssa. 
+        Hyvinvointimatkojeni ohjelma koostuu esimerkiksi vesijumpasta, joogasta, mindfulnessista, retriitistä, vaelluksesta ja patikoinnista hyvää ruokaa ja viihtyisää majoitusta unohtamatta.
+        Jokainen hyvinvointimatka on tarkkaan suunniteltu, sinun ei tarvitse kuin hypätä kyytiin! Lue myös tyytyväisten asiakkaitteni kommentit ja kokemukset matkoista referenssit - osiosta.
+        <br>
+        Ota yhteyttä ja jutellaan lisää seuraavasta matkastamme!
+        <br>
+        -Anne Setälä
+  
         </p>
-      </div>
-      <div class="bubble">
-        <p class="asiakas">Asiakas 2</p>
-        <p class="description">
-          Pellentesque sollicitudin augue in dui dapibus, vel hendrerit justo
-          faucibus.
-        </p>
-      </div>
-      <div class="bubble">
-        <p class="asiakas">Asiakas 3</p>
-        <p class="description">Proin suscipit enim ut mattis maximus.</p>
-      </div>
-    </div>
-    <h2>Matkakohteemme:</h2>
-    <div class="maps">
-      <div class="iframe-container">
-        <div class="bubble2">
-          <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
         </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.4866989219468!2d24.93291057705013!3d60.201530175048404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920991ece823df%3A0xd4b4f30731ef9db7!2sBusiness%20College%20Helsinki!5e0!3m2!1sfi!2sfi!4v1732793964877!5m2!1sfi!2sfi"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+      </div>
+
+
+   <h2><u>Asiakkaiden kokemuksia</u><h2>
+
+    <div class="bubbles-container">
+      <div class="bubble" id="reference1">
+        <img src="assets/Referenssit/Referenssi1_AnjaKirjuri.jpg" alt="Anja Kirjurin kuva">
+        <p class="asiakas">Anja Kirjuri</p>
+        <p class="description">
+          "Annen matkat ovat aina hyvin järjestettyjä ja monipuolisia. Suosittelen lämpimästi!"
+        </p>
+      </div>
+      <div class="bubble" id="reference2">
+        <img src="assets/Referenssit/Referenssi2_KalleKoodari.jpg" alt="Kalle Koodarin kuva">
+        <p class="asiakas">Kalle Koodari</p>
+        <p class="description">
+          "Loistava tapa yhdistää liikunta ja matkailu. Anne on ammattitaitoinen ohjaaja."
+        </p>
+      </div>
+      <div class="bubble" id="reference3">
+        <img src="assets/Referenssit/Referenssi3_LenniLekuri.jpg" alt="Lenni Lekurin kuva">
+        <p class="asiakas">Lenni Lekuri</p>
+        <p class="description">
+          "Matkat ovat täydellinen yhdistelmä liikuntaa, rentoutumista ja hyvää seuraa."
+        </p>
+      </div>
+      <div class="bubble" id="reference4">
+        <img src="assets/Referenssit/Referenssi5_TimoTaksi.jpg" alt="Timo Taksin kuva">
+        <p class="asiakas">Timo Taksi</p>
+        <p class="description">
+          "Annen matkoilla yhdistyy ammattitaito ja rento tunnelma. Suosittelen!"
+        </p>
       </div>
     </div>
-    <footer></footer>
+
+    <h2 id="kartta-target">Matkakohteemme:</h2>
+    <div id="iframe-container" class="iframe-container">
+      <h2>Liikuntamatkojemme kohteet:</h2>
+      <p class="description">
+        Italia, Gardajärvi<br />Norja, Lofootit<br />
+        Islanti, Blueberry Hills Villa <br />
+        Slovenia, Hotel San Martin <br /> Tanska, Hotel Scandic
+        <br /><h4> Matkoja voi varata <a href="intranet/intralogin.html">Intranetistä</a></h4>
+      </p>
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1V5EYKdp4vosvqG7EENbl6v8tivYLfhk&ehbc=2E312F&noprof=1" 
+        width="640" 
+        height="480"
+        style="border: 0"
+        allowfullscreen="0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <h1>Select payment method:</h1>
+    <form id="maksu">
+      <div class="radio-group">
+        <!-- Option 1 -->
+        <label class="radio-item">
+          <input type="radio" name="options" value="option1" id="option1" />
+          <img src="644743-200.png" alt="Option 1 Icon" />
+          Luonnossa
+        </label>
+        <!-- Option 2 -->
+        <label class="radio-item">
+          <input type="radio" name="options" value="option2" id="option2" />
+          <img src="174861.png" alt="Option 2 Icon" />
+          Paypal
+        </label>
+        <!-- Option 3 -->
+        <label class="radio-item">
+          <input type="radio" name="options" value="option3" id="option3" />
+          <img src="visa-icon-2048x628-6yzgq2vq.png" alt="Option 3 Icon" />
+          Visa
+        </label>
+        <!-- Option 4 -->
+        <label class="radio-item">
+          <input type="radio" name="options" value="option4" id="option4" />
+          <img src="Mastercard-Logo.wine.png" alt="Option 4 Icon" />
+          Mastercard
+        </label>
+      </div>
+      <button class="btn">
+        <i class="animatio"></i>Submit<i class="animation"></i>
+      </button>
+    </form>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Yhteystiedot</h3>
+          <p>Anne Setälä</p>
+          <p>Puh: 040 123 4567</p>
+          <p>Email: anne@annes.fi</p>
+        </div>
+        <div class="footer-section">
+          <h3>Seuraa meitä</h3>
+          <div class="social-links">
+
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="assets/facebook.png" alt="Facebook" />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="assets/instagram.png" alt="Instagram" />
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="assets/linkedin.png" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Osoite</h3>
+          <p>Kanahaukantie 12 </p>
+          <p>28220 Pori</p>
+          <p>Suomi</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Annes. Kaikki oikeudet pidätetään.</p>
+      </div>
+    </footer>
   </body>
+  <script src="main.js"></script>
 </html>

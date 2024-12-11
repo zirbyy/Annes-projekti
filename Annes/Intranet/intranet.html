@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <img src="/assets/HeroBanner/AnneSetalaLogo.jpg" id="banner" /><img />
+        <ul id="valikko">
+          <li>
+            <a href="/Annes.fi.html">Etusivu</a>
+        </li>
+          <li>
+            <a href="/Annes.fi.html" id="kartta-link">Kartta</a>
+          </li>
+          <li>
+            <a href="/Annes.fi.html" id="yhteistiedot-link">Yhteistiedot</a>
+          </li>
+          <li>
+            <a href="intranet/login.html">Intranet</a>
+          </li>
+        </ul>
+      </nav>
+
+
+<main>
+    <button id="addTripButton" onclick="toggleTripForm()">Lisää uusi matka</button>
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="trip-form" id="tripForm">
+      <h2>Lisää / Muokkaa Liikuntamatka</h2>
+      <select id="location" required>
+          <option value="">Valitse sijainti</option>
+          <option value="Italian Gardajärvi">Italian, Gardajärvi</option>
+          <option value="Norjan Lofootit">Norja, Lofootit</option>
+          <option value="Islanti Blueberry Hills Villa">Islanti: Blueberry hills Villa, Reykjavi</option>
+          <option value="Slovenia Hotel San Martin">Slovenia: Hotel San Martin, Šmartno, Kojsko</option>
+          <option value="Tanska Hotel Scandic">Tanska: Hotel Scandic, Kastellet</option>
+      </select>
+      <input type="text" id="tripIdDisplay" placeholder="Trip ID" readonly>
+      <input type="text" id="coordinates" placeholder="Koordinaatit" readonly>
+      <input type="text" id="title" placeholder="Otsikko" required readonly>
+      <textarea id="description" placeholder="Kuvausteksti" required></textarea>
+      <div class="date-field">
+        <label for="date">Lähtöpäivä:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+      <div class="date-field">
+        <label for="returnDate">Paluupäivä:</label>
+        <input type="date" id="returnDate" name="returnDate" required>
+      </div>
+      <img id="imagePreview" src="#" alt="Image Preview" style="display:none; width: 100%; max-width: 300px; margin-bottom: 10px;">
+      <button id="saveButton" onclick="addTrip()">Tallenna</button>
+      <button onclick="toggleTripForm()">Peruuta</button>
+  </div>
+
+    <div class="trip-list">
+        <h2>Liikuntamatkat</h2>
+        <ul id="tripList"></ul>
+    </div>
+    
+</main>
+
+<footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Yhteystiedot</h3>
+        <p>Anne Setälä</p>
+        <p>Puh: 040 5387043</p>
+        <p>Email: annesetala62@gmail.com</p>
+      </div>
+      <div class="footer-section">
+        <h3>Seuraa meitä:</h3>
+          <div class="social-links">
+
+            <a
+              href="https://facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/assets/facebook.png" alt="Facebook" />
+            </a>
+            <a
+              href="https://instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/assets/instagram.png" alt="Instagram" />
+            </a>
+            <a
+              href="https://linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/assets/linkedin.png" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+      <div class="footer-section">
+        <h3>Osoite</h3>
+        <p>Kanahaukantie 12 </p>
+        <p>28220 Pori</p>
+        <p>Suomi</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+          <p>&copy; 2024 Annes. Kaikki oikeudet pidätetään.</p>
+        </div>
+
+  </footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>

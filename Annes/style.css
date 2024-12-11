@@ -1,123 +1,291 @@
 * {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    color: #2d3436;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  
+  
+  #valikko {
+      list-style-type: none;
+      margin: 0;
+      background: rgb(255, 255, 255);
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.2rem 0.5rem;
+  }
+  
+  .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+  }
+  
+  .nav-links a {
+    color: #2d3436;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+  }
+  .nav-links a:hover {
+        color: #6c5ce7;
+        background: rgba(108, 92, 231, 0.1);
 }
 
-#valikko {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
+  
+  #banner {
+      width: 300px;
+      height: 100px;
+      border-radius: 10px;
+      margin-top: 0.25rem;
+  } 
+  /* Hero-osio */
+  #hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                      url(assets/HeroBanner/HeroBannerKuvia/KuvaNorja3_Pixabay.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 30px;
+    margin-bottom: 0;
+  }
+  
+  #annes {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  #esittelyteksti {
+    font-size: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    padding: 1rem;
+  }
+  
 
-li {
-  float: right;
-}
+  
+  .Palvelusta{
+    padding: 5rem 3rem;
+    background: linear-gradient(135deg, #98FB98 0%, #FFB6C1 100%);
+    margin: 0rem 0;
+    margin-bottom: 3rem;
+    
+  }
+  .Palvelusta img{
+   
+    width: 300px;
+    height:300px;
+    border-radius: 55%;
+  }
 
-li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  margin-top: 15px;
-}
-#banner {
-  width: 300px;
-  height: 100px;
-}
-li a:hover {
-  text-decoration: underline;
-}
-#hero {
-  background-color: black;
-  padding-bottom: 100px;
-}
-#annes {
-  color: white;
-  text-align: center;
-  margin: 0px;
-}
-#tutustu {
-  background-color: #e2ffbb;
-  color: black;
-  cursor: pointer;
-  display: block;
-  margin: auto;
-  padding: 10px 50px;
-  border-radius: 20px;
-}
-.annes-kuvat {
-  display: flex;
-  justify-content: center;
-  gap: 80px;
-}
+  /* Kuvagalleria */
+  .annes-kuvat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 3rem;
+    max-width: 1200px;
+    margin: 0rem auto;
+    margin-top: 5rem;
+  }
+  
+  .annes-kuvat img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .annes-kuvat img:hover {
+    transform: translateY(-10px);
+  }
+/* Add or modify these styles in your style.css file */
 
-.annes-kuvat img {
-  width: 250px;
-  height: 350px;
-  border-radius: 20px;
-  object-fit: cover;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-top: 10px;
-}
-h2 {
-  text-align: center;
-}
-#esittelyteksti {
-  color: white;
-  text-align: center;
-}
-footer {
-  background-color: #e2ffbb;
-  padding: 50px 10px;
-}
-.bubbles-container {
-  display: flex;
-  justify-content: center;
-  gap: 150px;
-  margin-top: 20px;
-}
-
-.bubble {
-  background-color: #f0f8ff;
-  border-radius: 20px;
-  padding: 20px;
-  width: 200px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.bubble .asiakas {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.bubble .description {
-  font-size: 14px;
-  color: #555;
-}
-
-.iframe-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  height: 100vh;
-  max-width: 450;
-
-  margin-right: 30px;
-  background-color: #f0f8ff;
-  border-radius: 20px;
-  padding: 20px;
-  width: 600px;
-  height: 435px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-iframe {
-  border: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-}
+  
+  /* Maksutavat */
+  .radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 400px;
+    margin: 3rem auto;
+    background: linear-gradient(135deg, #98FB98 0%, #FFB6C1 100%);
+    padding: 3rem;
+    border-radius: 15px;
+  }
+  
+  .radio-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .radio-item:hover {
+    transform: translateX(5px);
+  }
+  
+  .radio-item img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+  
+  /* Painikkeet */
+  button.btn {
+    background: #98FB98;
+    color: white;
+    padding: 1.2rem 2.5rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(152, 251, 152, 0.3);
+    margin: 2rem 0;
+  }
+  
+  button.btn:hover {
+    background: #FFB6C1;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 182, 193, 0.4);
+  }
+  
+  /* Asiakaspalautteet */
+  .bubbles-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .bubble {
+    display: none;
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  .bubble.active {
+    display: block;
+  }
+  
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  .bubble img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .bubble .asiakas {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .bubble .description {
+    line-height: 1.6;
+  }
+  
+  /* Kartta */
+  .iframe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem auto;
+    padding: 3rem;
+    max-width: 1200px;
+    background: linear-gradient(135deg, #FFB6C1 0%, #98FB98 100%);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  iframe {
+      margin-top: 1rem;
+    width: 100%;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer */
+  footer {
+      background: linear-gradient(135deg, #98FB98 0%, #FFB6C1 100%);
+      color: white;
+      padding: 4rem 2rem 2rem;
+      margin-top: auto;
+    }
+    
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+    }
+    .social-links img {
+      margin-top: 10px;
+      width: 35px;
+      height: 35px;
+      transition: transform 0.3s ease;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .social-links img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: rem;
+    }
+ 
