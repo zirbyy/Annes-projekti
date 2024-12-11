@@ -15,10 +15,10 @@
     flex-direction: column;
   }
   
-nav {
+  nav {
     position: fixed;
     width: 100%;
-    z-index: -1;
+    z-index: 1;
     background: rgba(255, 255, 255, 0.95);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     display: flex;

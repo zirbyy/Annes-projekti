@@ -19,8 +19,8 @@
   nav {
     position: fixed;
     width: 100%;
-    z-index: -1;
-    background: rgba(255, 255, 255, 0.95);
+    z-index: 1000;
+    background: rgba(255, 255, 255);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
@@ -123,7 +123,7 @@
     color: white;
     border: none;
     cursor: pointer;
-    margin: 140px 0 10px;
+    margin-top: 120px;
     border-radius: 30px;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -165,7 +165,7 @@
   }
   
   .delete-button {
-    background: #FFB6C1;
+    background: #ff657c;
   }
   
   .edit-button:hover, .delete-button:hover {
@@ -212,6 +212,7 @@
     gap: 3rem;
   }
   .social-links img {
+    margin-top: 10px;
     width: 35px;
     height: 35px;
     transition: transform 0.3s ease;
@@ -226,7 +227,7 @@
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-top: 1rem;
+    margin-top: rem;
   }
 
   @media (max-width: 768px) {
@@ -234,9 +235,12 @@
       flex-direction: column;
       align-items: center;
       padding: 1rem;
+      height: auto;
     }
 
     #banner {
+      width: 200px;
+      height: 70px;
       margin: 0 0 1rem 0;
     }
 
@@ -250,6 +254,65 @@
     li {
       margin: 0.5rem 0;
       width: 100%;
+      text-align: center;
+    }
+
+    .trip-form {
+      width: 95%;
+      padding: 10px;
+    }
+
+    #addTripButton {
+      margin-top: 200px;
+      width: 90%;
+      padding: 0.8rem 1.5rem;
+    }
+
+    .edit-button, .delete-button {
+      padding: 4px 8px;
+      font-size: 0.9rem;
+    }
+
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 0 1rem;
+    }
+
+    .social-links {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    nav {
+      padding: 0.5rem;
+    }
+
+    #banner {
+      width: 150px;
+      height: 50px;
+    }
+
+    .trip-form {
+      width: 100%;
+      max-height: 90vh;
+    }
+
+    #addTripButton {
+      margin-top: 250px;
+      font-size: 0.9rem;
+      padding: 0.7rem 1.2rem;
+    }
+
+    .edit-button, .delete-button {
+      padding: 3px 6px;
+      font-size: 0.8rem;
+      margin-left: 5px;
+    }
+
+    .footer-content {
       text-align: center;
     }
   }
