@@ -8,23 +8,16 @@
 </head>
 <body>
     <nav>
-        <img src="/assets/HeroBanner/AnneSetalaLogo.jpg" id="banner" /><img />
-        <ul id="valikko">
-            <li>
-                <a href="/Annes.fi.html">Etusivu</a>
-            </li>
-            <li>
-              <a href="/Annes.fi.html" id="kartta-link">Kartta</a>
-            </li>
-            <li>
-              <a href="/Annes.fi.html" id="yhteistiedot-link">Yhteistiedot</a>
-            </li>
-            <li>
-              <a href="intranet/login.html">Intranet</a>
-            </li>
+        <img src="/Annes/assets/HeroBanner/AnneSetalaLogo.png" id="banner" />
+        <button class="menu-toggle">☰</button>
+        <ul id="valikko" class="nav-links">
+            <li><a href="/Annes/Annes.fi.html">Etusivu</a></li>
+            <li><a href="/Annes/Annes.fi.html" id="kartta-link">Kartta</a></li>
+            <li><a href="/Annes/Annes.fi.html" id="yhteistiedot-link">Yhteistiedot</a></li>
+            <li><a href="intranet/login.html">Intranet</a></li>
         </ul>
-      </nav>
-      <div class="login-container">
+    </nav>
+    <div class="login-container">
         <h2>Annes intranet</h2>
         <input type="text" id="username" placeholder="Käyttäjätunnus" required autocomplete="off">
         <input type="password" id="password" placeholder="Salasana" required autocomplete="off">
@@ -61,6 +54,23 @@
         
         lastScrollTop = scrollTop;
     });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerMenu = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('#valikko');
+
+    hamburgerMenu.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+    });
+
+    // Suljetaan valikko kun klikataan valikon ulkopuolelta
+    document.addEventListener('click', function(event) {
+        if (!event.target.closest('nav')) {
+            navLinks.classList.remove('active');
+        }
+    });
+});
 </script>
 
 </body>

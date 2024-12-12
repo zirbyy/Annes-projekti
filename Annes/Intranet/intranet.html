@@ -5,25 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intranet</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+
+        .hamburger-menu {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            position: absolute;
+            right: 1rem;
+            top: 1.5rem;
+            z-index: 1001;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger-menu {
+                display: block;
+            }
+
+            #valikko {
+                display: none;
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 250px;
+                height: 100vh;
+                background: white;
+                box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+                padding-top: 80px;
+                transition: transform 0.3s ease-in-out;
+                transform: translateX(100%);
+            }
+
+            #valikko.active {
+                display: flex;
+                transform: translateX(0);
+            }
+
+            #valikko li {
+                margin: 1rem 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            #valikko li a {
+                display: block;
+                padding: 1rem;
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav>
-        <img src="/assets/HeroBanner/AnneSetalaLogo.jpg" id="banner" /><img />
-        <ul id="valikko">
-          <li>
-            <a href="/Annes.fi.html">Etusivu</a>
-        </li>
-          <li>
-            <a href="/Annes.fi.html" id="kartta-link">Kartta</a>
-          </li>
-          <li>
-            <a href="/Annes.fi.html" id="yhteistiedot-link">Yhteistiedot</a>
-          </li>
-          <li>
-            <a href="intranet/login.html">Intranet</a>
-          </li>
+        <img src="/Annes/assets/HeroBanner/AnneSetalaLogo.png" id="banner" />
+        <button class="hamburger-menu">☰</button>
+        <ul id="valikko" class="nav-links">
+            <li><a href="/Annes/">Etusivu</a></li>
+            <li><a href="/Annes.fi.html" id="kartta-link">Kartta</a></li>
+            <li><a href="/Annes.fi.html" id="yhteistiedot-link">Yhteistiedot</a></li>
+            <li><a href="intranet/login.html">Intranet</a></li>
         </ul>
-      </nav>
+    </nav>
 
 
 <main>
@@ -56,6 +101,8 @@
       <button onclick="toggleTripForm()">Peruuta</button>
   </div>
 
+
+
     <div class="trip-list">
         <h2>Liikuntamatkat</h2>
         <ul id="tripList"></ul>
@@ -80,21 +127,21 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/assets/facebook.png" alt="Facebook" />
+              <img src="/Annes/assets/facebook.png" alt="Facebook" />
             </a>
             <a
               href="https://instagram.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/assets/instagram.png" alt="Instagram" />
+              <img src="/Annes/assets/instagram.png" alt="Instagram" />
             </a>
             <a
               href="https://linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/assets/linkedin.png" alt="LinkedIn" />
+              <img src="/Annes/assets/linkedin.png" alt="LinkedIn" />
             </a>
           </div>
         </div>
@@ -112,6 +159,24 @@
   </footer>
 
 <script src="main.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navLinks = document.querySelector('#valikko');
+
+    hamburgerMenu.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+    });
+
+    // Suljetaan valikko kun klikataan valikon ulkopuolelta
+    document.addEventListener('click', function(event) {
+        if (!event.target.closest('nav')) {
+            navLinks.classList.remove('active');
+        }
+    });
+});
+</script>
 
 </body>
 </html>
