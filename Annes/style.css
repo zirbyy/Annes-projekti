@@ -207,7 +207,7 @@ button.btn:hover {
   animation: fadeIn 0.5s ease-in;
 }
 
-.bubble.active {
+.bubble.active { 
   display: block;
 }
 
